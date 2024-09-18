@@ -19,7 +19,7 @@ function Login() {
   };
 
   return (
-    <div>
+    <div style={styles.container}>
       <h1>Login</h1>
       <input
         type="email"
@@ -38,5 +38,43 @@ function Login() {
     </div>
   );
 }
+
+
+const styles = {
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100vh',
+  },
+  input: {
+    width: '300px',
+    padding: '10px',
+    margin: '10px',
+    borderRadius: '5px',
+    border: '1px solid #ccc',
+  },
+  button: {
+    width: '150px',
+    padding: '10px',
+    margin: '10px',
+    borderRadius: '5px',
+    backgroundColor: '#4CAF50',
+    color: 'white',
+    border: 'none',
+    cursor: 'pointer',
+  },
+  switchButton: {
+    width: '150px',
+    padding: '10px',
+    margin: '10px',
+    borderRadius: '5px',
+    backgroundColor: '#2196F3',
+    color: 'white',
+    border: 'none',
+    cursor: 'pointer',
+  },
+};
 
 export default Login;
